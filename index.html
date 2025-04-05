@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ChemDraw JS Replacement Tool</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+    h1 {
+      color: #227744;
+      margin-top: 0;
+    }
+    p {
+      line-height: 1.6;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-top: 20px;
+    }
+    .note {
+      font-size: 0.95em;
+      color: #777;
+      margin-top: 20px;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      iframe {
+        height: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Online Chemical Structure Drawing Tool</h1>
+    <p>This is a lightweight alternative interface to draw and edit chemical structures online. You can export the result as an image or SMILES using the built-in menu (☰ icon on the top left of the canvas).</p>
+    <p>For example, to export as <strong>SMILES</strong> or download the image, click the <strong>menu icon</strong> in the editor and choose the desired format.</p>
+
+    <iframe src="https://pubchem.ncbi.nlm.nih.gov/edit3/index.html" title="Molecule Editor" aria-label="Chemical Structure Editor"></iframe>
+
+    <p class="note">
+      Tool powered by <a href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank" rel="noopener noreferrer">PubChem</a> (NIH).<br>
+      If you require more advanced features like templates, reactions, or database integration, consider installing offline software like <a href="https://www.chemdraw.com/" target="_blank" rel="noopener noreferrer">ChemDraw</a>.
+    </p>
+  </div>
+</body>
+</html>
